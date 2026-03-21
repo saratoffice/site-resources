@@ -1,0 +1,207 @@
+<svg width="1200" height="450" viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm amber-teal gradient background -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A2744"/>
+      <stop offset="60%" stop-color="#0D3B6E"/>
+      <stop offset="100%" stop-color="#083052"/>
+    </linearGradient>
+
+    <!-- Glow for document icons -->
+    <linearGradient id="docGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F5C842"/>
+      <stop offset="100%" stop-color="#C98A10"/>
+    </linearGradient>
+
+    <!-- Teal accent gradient -->
+    <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1ABCAC"/>
+      <stop offset="100%" stop-color="#0E8A7D"/>
+    </linearGradient>
+
+    <!-- Subtle radial glow center -->
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1A4F8A" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0A2744" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Left card gradient -->
+    <linearGradient id="cardGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A4070" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0D3055" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1ABCAC"/>
+      <stop offset="100%" stop-color="#F5C842"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Radial glow overlay -->
+  <rect width="1200" height="450" fill="url(#centerGlow)"/>
+
+  <!-- Decorative geometric grid lines (left) -->
+  <g opacity="0.07" stroke="#FFFFFF" stroke-width="0.8">
+    <line x1="0" y1="75" x2="1200" y2="75"/>
+    <line x1="0" y1="150" x2="1200" y2="150"/>
+    <line x1="0" y1="225" x2="1200" y2="225"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="375" x2="1200" y2="375"/>
+    <line x1="100" y1="0" x2="100" y2="450"/>
+    <line x1="250" y1="0" x2="250" y2="450"/>
+    <line x1="400" y1="0" x2="400" y2="450"/>
+    <line x1="600" y1="0" x2="600" y2="450"/>
+    <line x1="800" y1="0" x2="800" y2="450"/>
+    <line x1="1000" y1="0" x2="1000" y2="450"/>
+    <line x1="1100" y1="0" x2="1100" y2="450"/>
+  </g>
+
+  <!-- Large decorative circles (right bg decoration) -->
+  <circle cx="980" cy="225" r="280" fill="none" stroke="#1ABCAC" stroke-width="0.6" opacity="0.12"/>
+  <circle cx="980" cy="225" r="200" fill="none" stroke="#1ABCAC" stroke-width="0.5" opacity="0.10"/>
+  <circle cx="980" cy="225" r="130" fill="none" stroke="#F5C842" stroke-width="0.5" opacity="0.14"/>
+
+  <!-- Top amber accent bar -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#btnGrad)"/>
+
+  <!-- === LEFT TEXT SECTION === -->
+
+  <!-- SARAT OFFICE main logo/title -->
+  <text x="70" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" fill="#FFFFFF" letter-spacing="3">SARAT OFFICE</text>
+
+  <!-- Tagline underline accent -->
+  <rect x="70" y="112" width="340" height="3" rx="2" fill="url(#tealGrad)"/>
+
+  <!-- Tagline -->
+  <text x="70" y="150" font-family="Georgia, serif" font-size="18" fill="#1ABCAC" letter-spacing="1.5">Beyond the World</text>
+
+  <!-- Description text -->
+  <text x="70" y="200" font-family="Arial, sans-serif" font-size="16" fill="#B8D0E8" letter-spacing="0.3">Your trusted hub for Government Guidelines,</text>
+  <text x="70" y="224" font-family="Arial, sans-serif" font-size="16" fill="#B8D0E8" letter-spacing="0.3">Official Orders, Useful Tools &amp; Resources</text>
+
+  <!-- Divider dot row -->
+  <circle cx="70" cy="256" r="3" fill="#1ABCAC"/>
+  <circle cx="86" cy="256" r="3" fill="#F5C842"/>
+  <circle cx="102" cy="256" r="3" fill="#1ABCAC" opacity="0.5"/>
+
+  <!-- Feature bullets -->
+  <!-- Bullet 1 -->
+  <rect x="70" y="272" width="18" height="18" rx="3" fill="#1ABCAC" opacity="0.2"/>
+  <rect x="74" y="276" width="10" height="10" rx="2" fill="#1ABCAC"/>
+  <text x="100" y="285" font-family="Arial, sans-serif" font-size="14" fill="#D6ECF8">Government Letters &amp; PDFs</text>
+
+  <!-- Bullet 2 -->
+  <rect x="70" y="302" width="18" height="18" rx="3" fill="#F5C842" opacity="0.2"/>
+  <rect x="74" y="306" width="10" height="10" rx="2" fill="#F5C842"/>
+  <text x="100" y="315" font-family="Arial, sans-serif" font-size="14" fill="#D6ECF8">Online Calculators &amp; Converters</text>
+
+  <!-- Bullet 3 -->
+  <rect x="70" y="332" width="18" height="18" rx="3" fill="#1ABCAC" opacity="0.2"/>
+  <rect x="74" y="336" width="10" height="10" rx="2" fill="#1ABCAC"/>
+  <text x="100" y="345" font-family="Arial, sans-serif" font-size="14" fill="#D6ECF8">Curated Web Links &amp; Office Tools</text>
+
+  <!-- CTA Button -->
+  <rect x="70" y="378" width="180" height="44" rx="22" fill="url(#tealGrad)"/>
+  <text x="160" y="406" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">Explore Now</text>
+
+  <!-- Website URL small -->
+  <text x="270" y="405" font-family="Arial, sans-serif" font-size="13" fill="#7AAECC" letter-spacing="0.5">saratoffice.in</text>
+
+  <!-- === RIGHT SIDE ILLUSTRATION: Floating document cards === -->
+
+  <!-- Document card 1 (Guidelines - large, center-right) -->
+  <g transform="translate(620, 70)">
+    <rect width="200" height="140" rx="10" fill="url(#cardGrad)" stroke="#1ABCAC" stroke-width="1" stroke-opacity="0.5"/>
+    <!-- Doc top colored bar -->
+    <rect x="0" y="0" width="200" height="5" rx="10" fill="#1ABCAC"/>
+    <!-- Lines representing text -->
+    <rect x="16" y="24" width="100" height="8" rx="4" fill="#F5C842" opacity="0.8"/>
+    <rect x="16" y="44" width="168" height="5" rx="3" fill="#FFFFFF" opacity="0.15"/>
+    <rect x="16" y="56" width="140" height="5" rx="3" fill="#FFFFFF" opacity="0.12"/>
+    <rect x="16" y="68" width="155" height="5" rx="3" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="16" y="80" width="120" height="5" rx="3" fill="#FFFFFF" opacity="0.1"/>
+    <!-- Divider -->
+    <rect x="16" y="96" width="168" height="1" rx="1" fill="#1ABCAC" opacity="0.3"/>
+    <!-- Icon row -->
+    <rect x="16" y="108" width="24" height="16" rx="4" fill="#1ABCAC" opacity="0.4"/>
+    <rect x="48" y="112" width="60" height="6" rx="3" fill="#FFFFFF" opacity="0.2"/>
+    <!-- Label -->
+    <text x="100" y="135" font-family="Arial, sans-serif" font-size="11" fill="#1ABCAC" text-anchor="middle" letter-spacing="0.5">GOVT. GUIDELINES</text>
+  </g>
+
+  <!-- Document card 2 (Orders - tilted, upper right) -->
+  <g transform="translate(848, 42) rotate(-6)">
+    <rect width="180" height="125" rx="9" fill="url(#cardGrad)" stroke="#F5C842" stroke-width="1" stroke-opacity="0.5"/>
+    <rect x="0" y="0" width="180" height="5" rx="9" fill="#F5C842"/>
+    <rect x="14" y="22" width="88" height="7" rx="3" fill="#F5C842" opacity="0.9"/>
+    <rect x="14" y="38" width="152" height="4" rx="2" fill="#FFFFFF" opacity="0.14"/>
+    <rect x="14" y="49" width="130" height="4" rx="2" fill="#FFFFFF" opacity="0.11"/>
+    <rect x="14" y="60" width="142" height="4" rx="2" fill="#FFFFFF" opacity="0.09"/>
+    <rect x="14" y="71" width="100" height="4" rx="2" fill="#FFFFFF" opacity="0.09"/>
+    <rect x="14" y="86" width="152" height="1" rx="1" fill="#F5C842" opacity="0.3"/>
+    <text x="90" y="112" font-family="Arial, sans-serif" font-size="10" fill="#F5C842" text-anchor="middle" letter-spacing="0.5">OFFICIAL ORDERS</text>
+  </g>
+
+  <!-- Document card 3 (Paddy / Procurement) -->
+  <g transform="translate(860, 195) rotate(4)">
+    <rect width="185" height="120" rx="9" fill="url(#cardGrad)" stroke="#7AB8D4" stroke-width="1" stroke-opacity="0.45"/>
+    <rect x="0" y="0" width="185" height="5" rx="9" fill="#7AB8D4"/>
+    <rect x="14" y="22" width="95" height="7" rx="3" fill="#7AB8D4" opacity="0.9"/>
+    <rect x="14" y="38" width="157" height="4" rx="2" fill="#FFFFFF" opacity="0.13"/>
+    <rect x="14" y="49" width="135" height="4" rx="2" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="14" y="60" width="148" height="4" rx="2" fill="#FFFFFF" opacity="0.09"/>
+    <rect x="14" y="71" width="108" height="4" rx="2" fill="#FFFFFF" opacity="0.09"/>
+    <rect x="14" y="84" width="157" height="1" rx="1" fill="#7AB8D4" opacity="0.3"/>
+    <text x="92" y="108" font-family="Arial, sans-serif" font-size="10" fill="#7AB8D4" text-anchor="middle" letter-spacing="0.5">PADDY MSP &amp; RULES</text>
+  </g>
+
+  <!-- Tools card (lower center-right) -->
+  <g transform="translate(640, 235)">
+    <rect width="200" height="130" rx="10" fill="url(#cardGrad)" stroke="#F5C842" stroke-width="1" stroke-opacity="0.4"/>
+    <rect x="0" y="0" width="200" height="5" rx="10" fill="#F5C842"/>
+    <text x="16" y="26" font-family="Arial, sans-serif" font-size="11" fill="#F5C842" letter-spacing="0.5">ONLINE TOOLS</text>
+
+    <!-- Mini tool tiles inside card -->
+    <rect x="14" y="36" width="50" height="36" rx="6" fill="#1ABCAC" opacity="0.15"/>
+    <rect x="18" y="46" width="22" height="3" rx="2" fill="#1ABCAC" opacity="0.7"/>
+    <rect x="18" y="54" width="16" height="3" rx="2" fill="#1ABCAC" opacity="0.5"/>
+    <text x="39" y="67" font-family="Arial, sans-serif" font-size="9" fill="#1ABCAC" text-anchor="middle">Age Calc</text>
+
+    <rect x="76" y="36" width="50" height="36" rx="6" fill="#F5C842" opacity="0.15"/>
+    <rect x="80" y="46" width="22" height="3" rx="2" fill="#F5C842" opacity="0.7"/>
+    <rect x="80" y="54" width="16" height="3" rx="2" fill="#F5C842" opacity="0.5"/>
+    <text x="101" y="67" font-family="Arial, sans-serif" font-size="9" fill="#F5C842" text-anchor="middle">Bill Check</text>
+
+    <rect x="138" y="36" width="48" height="36" rx="6" fill="#7AB8D4" opacity="0.15"/>
+    <rect x="142" y="46" width="20" height="3" rx="2" fill="#7AB8D4" opacity="0.7"/>
+    <rect x="142" y="54" width="14" height="3" rx="2" fill="#7AB8D4" opacity="0.5"/>
+    <text x="162" y="67" font-family="Arial, sans-serif" font-size="9" fill="#7AB8D4" text-anchor="middle">Density</text>
+
+    <rect x="14" y="83" width="172" height="1" rx="1" fill="#FFFFFF" opacity="0.1"/>
+
+    <!-- Web links row -->
+    <rect x="14" y="93" width="30" height="14" rx="3" fill="#1ABCAC" opacity="0.2"/>
+    <text x="29" y="104" font-family="Arial, sans-serif" font-size="9" fill="#1ABCAC" text-anchor="middle">Link</text>
+    <rect x="52" y="93" width="30" height="14" rx="3" fill="#F5C842" opacity="0.2"/>
+    <text x="67" y="104" font-family="Arial, sans-serif" font-size="9" fill="#F5C842" text-anchor="middle">PDF</text>
+    <rect x="90" y="93" width="30" height="14" rx="3" fill="#7AB8D4" opacity="0.2"/>
+    <text x="105" y="104" font-family="Arial, sans-serif" font-size="9" fill="#7AB8D4" text-anchor="middle">Govt</text>
+
+    <text x="100" y="123" font-family="Arial, sans-serif" font-size="9" fill="#B8D0E8" text-anchor="middle" opacity="0.7">saratoffice.in</text>
+  </g>
+
+  <!-- Floating dots decorative -->
+  <circle cx="590" cy="300" r="3" fill="#1ABCAC" opacity="0.5"/>
+  <circle cx="570" cy="320" r="2" fill="#F5C842" opacity="0.4"/>
+  <circle cx="610" cy="340" r="2" fill="#1ABCAC" opacity="0.3"/>
+  <circle cx="1080" cy="80" r="4" fill="#F5C842" opacity="0.3"/>
+  <circle cx="1100" cy="130" r="2.5" fill="#1ABCAC" opacity="0.35"/>
+  <circle cx="1060" cy="380" r="3" fill="#1ABCAC" opacity="0.25"/>
+  <circle cx="1130" cy="340" r="2" fill="#F5C842" opacity="0.2"/>
+
+  <!-- Bottom gradient bar -->
+  <rect x="0" y="446" width="1200" height="4" fill="url(#btnGrad)" opacity="0.7"/>
+</svg>
