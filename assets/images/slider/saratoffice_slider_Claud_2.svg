@@ -1,0 +1,134 @@
+<svg width="1320" height="500" viewBox="0 0 1320 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="s1bg" cx="55%" cy="52%" r="60%">
+      <stop offset="0%" stop-color="#1a2a40"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </radialGradient>
+    <radialGradient id="s1glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6a00" stop-opacity="0.9"/>
+      <stop offset="40%" stop-color="#ff3d00" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ff1a00" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s1blueglow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00cfff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0066ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="s1blur">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="s1blur2">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+    <filter id="s1blur3">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <linearGradient id="s1streak1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff6a00" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#ff8c00" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#ffcc00" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#ff4400" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="s1streak2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff3300" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff5500" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff2200" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="s1bluestreak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0088ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00cfff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0044ff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="s1badge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#0044aa"/>
+    </linearGradient>
+    <linearGradient id="s1textgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#ffd080"/>
+      <stop offset="100%" stop-color="#ff8800"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1320" height="500" fill="url(#s1bg)"/>
+
+  <!-- Glow center burst -->
+  <ellipse cx="680" cy="260" rx="200" ry="160" fill="url(#s1glow)" filter="url(#s1blur3)"/>
+  <ellipse cx="200" cy="380" rx="120" ry="80" fill="url(#s1blueglow)" filter="url(#s1blur3)"/>
+
+  <!-- Orange/red streaks — diagonal top-right -->
+  <path d="M300,320 Q680,240 1320,60" stroke="url(#s1streak1)" stroke-width="6" fill="none" opacity="0.9"/>
+  <path d="M300,330 Q680,260 1320,90" stroke="url(#s1streak1)" stroke-width="3" fill="none" opacity="0.6"/>
+  <path d="M300,310 Q680,225 1320,40" stroke="url(#s1streak2)" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M300,345 Q680,275 1320,115" stroke="url(#s1streak2)" stroke-width="1.5" fill="none" opacity="0.4"/>
+  <path d="M300,360 Q680,295 1320,140" stroke="#ff6600" stroke-width="1" fill="none" opacity="0.25"/>
+
+  <!-- Bright core streak -->
+  <path d="M500,310 Q680,255 820,230" stroke="#ffee88" stroke-width="4" fill="none" opacity="0.95" filter="url(#s1blur2)"/>
+  <path d="M500,310 Q680,255 820,230" stroke="#ffffff" stroke-width="1.5" fill="none" opacity="0.7"/>
+
+  <!-- Blue streaks — diagonal bottom-left -->
+  <path d="M0,380 Q320,330 680,260" stroke="url(#s1bluestreak)" stroke-width="5" fill="none" opacity="0.8"/>
+  <path d="M0,395 Q320,348 680,278" stroke="url(#s1bluestreak)" stroke-width="3" fill="none" opacity="0.5"/>
+  <path d="M0,365 Q320,312 680,240" stroke="#00aaff" stroke-width="1.5" fill="none" opacity="0.35"/>
+
+  <!-- Lens flare circles at burst center -->
+  <circle cx="680" cy="258" r="30" fill="#ffffff" opacity="0.12" filter="url(#s1blur)"/>
+  <circle cx="680" cy="258" r="12" fill="#fff8e0" opacity="0.6" filter="url(#s1blur2)"/>
+  <circle cx="680" cy="258" r="5" fill="#ffffff" opacity="0.95"/>
+
+  <!-- Small bokeh dots -->
+  <circle cx="620" cy="270" r="6" fill="#aaddff" opacity="0.5" filter="url(#s1blur2)"/>
+  <circle cx="600" cy="280" r="3" fill="#ffffff" opacity="0.4"/>
+  <circle cx="750" cy="248" r="8" fill="#ff8844" opacity="0.4" filter="url(#s1blur2)"/>
+  <circle cx="770" cy="242" r="3.5" fill="#ffcc88" opacity="0.6"/>
+  <circle cx="560" cy="285" r="4" fill="#88ccff" opacity="0.5"/>
+  <circle cx="810" cy="236" r="2.5" fill="#ffaa55" opacity="0.7"/>
+
+  <!-- Particle dots along streaks -->
+  <circle cx="450" cy="310" r="2" fill="#ffffff" opacity="0.6"/>
+  <circle cx="530" cy="300" r="1.5" fill="#ffcc88" opacity="0.5"/>
+  <circle cx="350" cy="325" r="1.5" fill="#88aaff" opacity="0.5"/>
+  <circle cx="280" cy="380" r="3" fill="#66aaff" opacity="0.4"/>
+
+  <!-- LEFT SECTION: Text content -->
+  <!-- Accent line -->
+  <rect x="80" y="120" width="4" height="80" rx="2" fill="#ff6600"/>
+  
+  <!-- Main heading -->
+  <text x="100" y="165" font-family="'Georgia', serif" font-size="54" font-weight="700" fill="url(#s1textgrad)" letter-spacing="2">SARAT OFFICE</text>
+  
+  <!-- Sub-heading -->
+  <text x="102" y="200" font-family="'Trebuchet MS', sans-serif" font-size="20" fill="#88ccff" letter-spacing="5">BEYOND THE WORLD</text>
+
+  <!-- Thin separator -->
+  <rect x="100" y="218" width="280" height="1.5" rx="1" fill="#ff6600" opacity="0.7"/>
+
+  <!-- Description -->
+  <text x="100" y="252" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#c8ddf0" letter-spacing="0.5">Your Gateway to Government Resources,</text>
+  <text x="100" y="274" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#c8ddf0" letter-spacing="0.5">Useful Tools &amp; Official Documents</text>
+
+  <!-- Feature tags -->
+  <rect x="100" y="298" width="130" height="28" rx="14" fill="#ff6600" opacity="0.2"/>
+  <rect x="100" y="298" width="130" height="28" rx="14" fill="none" stroke="#ff6600" stroke-width="1"/>
+  <text x="165" y="317" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#ff9944" text-anchor="middle" letter-spacing="1">GOVT LETTERS</text>
+
+  <rect x="244" y="298" width="110" height="28" rx="14" fill="#0066cc" opacity="0.2"/>
+  <rect x="244" y="298" width="110" height="28" rx="14" fill="none" stroke="#0088ff" stroke-width="1"/>
+  <text x="299" y="317" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#44bbff" text-anchor="middle" letter-spacing="1">TOOLS</text>
+
+  <rect x="368" y="298" width="110" height="28" rx="14" fill="#00aa77" opacity="0.2"/>
+  <rect x="368" y="298" width="110" height="28" rx="14" fill="none" stroke="#00cc88" stroke-width="1"/>
+  <text x="423" y="317" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#44ddaa" text-anchor="middle" letter-spacing="1">WEB LINKS</text>
+
+  <!-- URL Badge -->
+  <rect x="100" y="360" width="280" height="46" rx="23" fill="url(#s1badge)"/>
+  <rect x="100" y="360" width="280" height="46" rx="23" fill="none" stroke="#0099ff" stroke-width="1.5"/>
+  <text x="240" y="389" font-family="'Georgia', serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">WWW.SARATOFFICE.IN</text>
+
+  <!-- Bottom right: decorative label -->
+  <text x="1240" y="460" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#446688" text-anchor="end" letter-spacing="2" opacity="0.7">EST. SARATOFFICE.IN</text>
+
+  <!-- Top right corner glow -->
+  <ellipse cx="1250" cy="80" rx="100" ry="60" fill="#ff4400" opacity="0.06" filter="url(#s1blur3)"/>
+</svg>

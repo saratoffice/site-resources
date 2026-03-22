@@ -1,0 +1,132 @@
+<svg width="1320" height="500" viewBox="0 0 1320 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="s2bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a3060"/>
+      <stop offset="50%" stop-color="#0c4a7a"/>
+      <stop offset="100%" stop-color="#083850"/>
+    </linearGradient>
+    <linearGradient id="s2wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c4a0" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#00e8c8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00b4d8" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="s2wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0066cc" stop-opacity="0.4"/>
+      <stop offset="60%" stop-color="#0099ff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#00c4a0" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="s2wave3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e8c8" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#66ffdd" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00c4a0" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="s2badge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#e8f6ff" stop-opacity="0.90"/>
+    </linearGradient>
+    <linearGradient id="s2titlegrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#80ffee"/>
+    </linearGradient>
+    <filter id="s2glow">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="s2softglow">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <radialGradient id="s2shine" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1320" height="500" fill="url(#s2bg)"/>
+  <rect width="1320" height="500" fill="url(#s2shine)"/>
+
+  <!-- Background wave shapes — large sweeping curves -->
+  <!-- Wave 1: large teal sweep -->
+  <path d="M-100,380 Q200,120 600,280 Q900,400 1400,180" stroke="url(#s2wave1)" stroke-width="90" fill="none" opacity="0.35" filter="url(#s2softglow)"/>
+  <!-- Wave 1 sharp edge -->
+  <path d="M-100,380 Q200,120 600,280 Q900,400 1400,180" stroke="url(#s2wave1)" stroke-width="3" fill="none" opacity="0.85"/>
+
+  <!-- Wave 2: blue mid sweep -->
+  <path d="M-100,430 Q300,200 700,340 Q1000,440 1400,240" stroke="url(#s2wave2)" stroke-width="60" fill="none" opacity="0.3" filter="url(#s2softglow)"/>
+  <path d="M-100,430 Q300,200 700,340 Q1000,440 1400,240" stroke="url(#s2wave2)" stroke-width="2" fill="none" opacity="0.6"/>
+
+  <!-- Wave 3: bright highlight sweep -->
+  <path d="M-100,340 Q150,80 500,220 Q800,340 1400,130" stroke="url(#s2wave3)" stroke-width="40" fill="none" opacity="0.4" filter="url(#s2glow)"/>
+  <path d="M-100,340 Q150,80 500,220 Q800,340 1400,130" stroke="#66ffee" stroke-width="1.5" fill="none" opacity="0.5"/>
+
+  <!-- Lower dark wave fill for text area contrast -->
+  <path d="M0,420 Q200,380 400,400 Q600,420 1320,390 L1320,500 L0,500 Z" fill="#041e38" opacity="0.5"/>
+
+  <!-- Subtle grid texture right side -->
+  <g opacity="0.04" stroke="#aaddff" stroke-width="0.7">
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="960" y1="0" x2="960" y2="500"/>
+    <line x1="1020" y1="0" x2="1020" y2="500"/>
+    <line x1="1080" y1="0" x2="1080" y2="500"/>
+    <line x1="1140" y1="0" x2="1140" y2="500"/>
+    <line x1="1200" y1="0" x2="1200" y2="500"/>
+    <line x1="1260" y1="0" x2="1260" y2="500"/>
+    <line x1="850" y1="0" x2="1320" y2="0"/>
+    <line x1="850" y1="60" x2="1320" y2="60"/>
+    <line x1="850" y1="120" x2="1320" y2="120"/>
+    <line x1="850" y1="180" x2="1320" y2="180"/>
+    <line x1="850" y1="240" x2="1320" y2="240"/>
+    <line x1="850" y1="300" x2="1320" y2="300"/>
+  </g>
+
+  <!-- RIGHT: Bold SARATOFFICE badge -->
+  <rect x="820" y="170" width="420" height="80" rx="40" fill="url(#s2badge)"/>
+  <rect x="820" y="170" width="420" height="80" rx="40" fill="none" stroke="#00e8c8" stroke-width="2"/>
+  <text x="1030" y="221" font-family="'Georgia', serif" font-size="34" font-weight="700" fill="#0a3060" text-anchor="middle" letter-spacing="3">SARATOFFICE</text>
+  <!-- Reflection text -->
+  <text x="1030" y="268" font-family="'Georgia', serif" font-size="18" font-weight="700" fill="#0a3060" text-anchor="middle" letter-spacing="3" opacity="0.18" transform="scale(1,-1) translate(0,-500)">SARATOFFICE</text>
+
+  <!-- Decorative dot ring (right center) -->
+  <circle cx="1050" cy="130" r="60" fill="none" stroke="#00e8c8" stroke-width="0.8" opacity="0.25"/>
+  <circle cx="1050" cy="130" r="40" fill="none" stroke="#0099ff" stroke-width="0.6" opacity="0.2"/>
+  <circle cx="1050" cy="130" r="20" fill="#00e8c8" opacity="0.06"/>
+
+  <!-- LEFT: Main content -->
+  <!-- Vertical accent bar -->
+  <rect x="70" y="110" width="5" height="100" rx="3" fill="#00e8c8"/>
+
+  <!-- Title -->
+  <text x="95" y="158" font-family="'Georgia', serif" font-size="50" font-weight="700" fill="url(#s2titlegrad)" letter-spacing="2">SARAT OFFICE</text>
+  <text x="97" y="192" font-family="'Trebuchet MS', sans-serif" font-size="17" fill="#80ddff" letter-spacing="6">BEYOND THE WORLD</text>
+
+  <!-- Separator -->
+  <rect x="95" y="208" width="300" height="2" rx="1" fill="#00e8c8" opacity="0.6"/>
+
+  <!-- Description -->
+  <text x="95" y="242" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#b8ddf0">Empowering Government Officials with</text>
+  <text x="95" y="264" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#b8ddf0">PDFs, Calculators &amp; Curated Resources</text>
+
+  <!-- Icon feature row -->
+  <!-- PDF -->
+  <circle cx="110" cy="308" r="18" fill="#00e8c8" opacity="0.15"/>
+  <circle cx="110" cy="308" r="18" fill="none" stroke="#00e8c8" stroke-width="1.2"/>
+  <text x="110" y="313" font-family="serif" font-size="12" fill="#00e8c8" text-anchor="middle">PDF</text>
+  <text x="136" y="312" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#c8e8f8">Government Letters</text>
+
+  <!-- Calc -->
+  <circle cx="110" cy="350" r="18" fill="#0099ff" opacity="0.15"/>
+  <circle cx="110" cy="350" r="18" fill="none" stroke="#0099ff" stroke-width="1.2"/>
+  <text x="110" y="355" font-family="serif" font-size="12" fill="#44aaff" text-anchor="middle">∑</text>
+  <text x="136" y="354" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#c8e8f8">Online Calculators</text>
+
+  <!-- Link -->
+  <circle cx="110" cy="392" r="18" fill="#ff8800" opacity="0.15"/>
+  <circle cx="110" cy="392" r="18" fill="none" stroke="#ff8800" stroke-width="1.2"/>
+  <text x="110" y="397" font-family="serif" font-size="11" fill="#ffaa44" text-anchor="middle">↗</text>
+  <text x="136" y="396" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#c8e8f8">Useful Web Links</text>
+
+  <!-- URL bottom bar -->
+  <rect x="70" y="440" width="700" height="36" rx="0" fill="#041e38" opacity="0.7"/>
+  <rect x="70" y="440" width="4" height="36" fill="#00e8c8"/>
+  <text x="90" y="464" font-family="'Trebuchet MS', sans-serif" font-size="15" fill="#80ddff" letter-spacing="2">www.saratoffice.in</text>
+  <text x="760" y="464" font-family="'Trebuchet MS', sans-serif" font-size="13" fill="#446688" text-anchor="end">Knowledge • Tools • Resources</text>
+</svg>

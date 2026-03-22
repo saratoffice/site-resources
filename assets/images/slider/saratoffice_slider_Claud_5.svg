@@ -1,0 +1,164 @@
+<svg width="1320" height="500" viewBox="0 0 1320 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="s3bg" cx="30%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#1a2d4a"/>
+      <stop offset="60%" stop-color="#0e1e34"/>
+      <stop offset="100%" stop-color="#060e1c"/>
+    </radialGradient>
+    <radialGradient id="s3bokeh1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#aaccff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#aaccff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s3bokeh2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#88bbff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s3bokeh3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ddeeff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#99bbdd" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="s3spotlight" cx="25%" cy="55%" r="40%">
+      <stop offset="0%" stop-color="#3a6090" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#3a6090" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="s3blur1"><feGaussianBlur stdDeviation="2"/></filter>
+    <filter id="s3blur2"><feGaussianBlur stdDeviation="5"/></filter>
+    <filter id="s3blur3"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="s3blur4"><feGaussianBlur stdDeviation="22"/></filter>
+    <linearGradient id="s3diag" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4488cc" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="s3gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#ffaa22"/>
+    </linearGradient>
+    <linearGradient id="s3title" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cce8ff"/>
+      <stop offset="100%" stop-color="#88bbff"/>
+    </linearGradient>
+    <linearGradient id="s3btngrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2255aa"/>
+      <stop offset="100%" stop-color="#3377cc"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1320" height="500" fill="url(#s3bg)"/>
+  <rect width="1320" height="500" fill="url(#s3spotlight)"/>
+
+  <!-- Diagonal light beams (top-right area) -->
+  <g opacity="0.07">
+    <line x1="700" y1="0" x2="1320" y2="300" stroke="#ffffff" stroke-width="80"/>
+    <line x1="780" y1="0" x2="1320" y2="250" stroke="#aaccff" stroke-width="40"/>
+    <line x1="860" y1="0" x2="1320" y2="200" stroke="#ffffff" stroke-width="20"/>
+  </g>
+
+  <!-- BOKEH CIRCLES — various sizes, depths -->
+  <!-- Large far bokeh -->
+  <circle cx="80" cy="180" r="70" fill="url(#s3bokeh1)" filter="url(#s3blur4)"/>
+  <circle cx="180" cy="350" r="90" fill="url(#s3bokeh2)" filter="url(#s3blur4)"/>
+  <circle cx="300" cy="140" r="55" fill="url(#s3bokeh3)" filter="url(#s3blur4)"/>
+  <circle cx="420" cy="420" r="65" fill="url(#s3bokeh1)" filter="url(#s3blur4)"/>
+  <circle cx="100" cy="460" r="45" fill="url(#s3bokeh2)" filter="url(#s3blur3)"/>
+  <circle cx="220" cy="60" r="40" fill="url(#s3bokeh3)" filter="url(#s3blur3)"/>
+  <circle cx="380" cy="280" r="30" fill="url(#s3bokeh1)" filter="url(#s3blur3)"/>
+
+  <!-- Medium bokeh -->
+  <circle cx="50" cy="300" r="28" fill="url(#s3bokeh2)" filter="url(#s3blur2)"/>
+  <circle cx="250" cy="200" r="22" fill="url(#s3bokeh1)" filter="url(#s3blur2)"/>
+  <circle cx="350" cy="80" r="18" fill="url(#s3bokeh3)" filter="url(#s3blur2)"/>
+  <circle cx="140" cy="420" r="25" fill="url(#s3bokeh1)" filter="url(#s3blur2)"/>
+  <circle cx="320" cy="380" r="20" fill="url(#s3bokeh2)" filter="url(#s3blur2)"/>
+  <circle cx="440" cy="120" r="16" fill="url(#s3bokeh1)" filter="url(#s3blur2)"/>
+  <circle cx="460" cy="340" r="22" fill="url(#s3bokeh3)" filter="url(#s3blur2)"/>
+
+  <!-- Small bright bokeh -->
+  <circle cx="160" cy="140" r="8" fill="#ddeeff" opacity="0.6" filter="url(#s3blur1)"/>
+  <circle cx="290" cy="310" r="6" fill="#ffffff" opacity="0.5" filter="url(#s3blur1)"/>
+  <circle cx="70" cy="380" r="9" fill="#bbddff" opacity="0.55" filter="url(#s3blur1)"/>
+  <circle cx="400" cy="200" r="7" fill="#ddeeff" opacity="0.5" filter="url(#s3blur1)"/>
+  <circle cx="200" cy="460" r="5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="350" cy="440" r="6" fill="#aaccff" opacity="0.45"/>
+  <circle cx="120" cy="240" r="5" fill="#ffffff" opacity="0.4"/>
+  <circle cx="240" cy="430" r="4" fill="#cce8ff" opacity="0.5"/>
+  <circle cx="410" cy="460" r="4" fill="#ffffff" opacity="0.35"/>
+  <circle cx="480" cy="80" r="5" fill="#aaddff" opacity="0.4"/>
+
+  <!-- Sharp bright dots (pinpoints) -->
+  <circle cx="95" cy="195" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="175" cy="305" r="2" fill="#ffffff" opacity="0.85"/>
+  <circle cx="265" cy="155" r="2.5" fill="#ffffff" opacity="0.8"/>
+  <circle cx="345" cy="395" r="2" fill="#ddeeff" opacity="0.8"/>
+  <circle cx="190" cy="385" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="415" cy="250" r="2" fill="#cce8ff" opacity="0.75"/>
+
+  <!-- RIGHT side bokeh (behind content area) -->
+  <circle cx="1100" cy="100" r="60" fill="url(#s3bokeh1)" filter="url(#s3blur4)" opacity="0.5"/>
+  <circle cx="1250" cy="380" r="80" fill="url(#s3bokeh2)" filter="url(#s3blur4)" opacity="0.4"/>
+  <circle cx="1180" cy="280" r="40" fill="url(#s3bokeh3)" filter="url(#s3blur3)" opacity="0.5"/>
+  <circle cx="1050" cy="420" r="30" fill="url(#s3bokeh1)" filter="url(#s3blur3)" opacity="0.4"/>
+
+  <!-- Right vertical divider glow -->
+  <rect x="560" y="60" width="1" height="380" fill="#4488cc" opacity="0.15"/>
+
+  <!-- === RIGHT: Text Content Area === -->
+  <!-- Card background -->
+  <rect x="590" y="60" width="680" height="390" rx="6" fill="url(#s3diag)"/>
+
+  <!-- Gold top accent line -->
+  <rect x="590" y="60" width="680" height="3" fill="url(#s3gold)"/>
+
+  <!-- Big SARAT OFFICE title -->
+  <text x="630" y="140" font-family="'Georgia', serif" font-size="58" font-weight="700" fill="url(#s3title)" letter-spacing="3">SARAT OFFICE</text>
+
+  <!-- Tagline -->
+  <text x="632" y="175" font-family="'Trebuchet MS', sans-serif" font-size="16" fill="#88bbdd" letter-spacing="6">B E Y O N D   T H E   W O R L D</text>
+
+  <!-- Gold divider -->
+  <rect x="630" y="192" width="340" height="2" rx="1" fill="url(#s3gold)" opacity="0.7"/>
+
+  <!-- Description block -->
+  <text x="630" y="228" font-family="'Trebuchet MS', sans-serif" font-size="15.5" fill="#cce0f4">Your trusted portal for Government Employees</text>
+  <text x="630" y="252" font-family="'Trebuchet MS', sans-serif" font-size="15.5" fill="#cce0f4">with verified PDFs, Smart Tools &amp; Official Links</text>
+
+  <!-- 3 feature blocks -->
+  <!-- Block 1 -->
+  <rect x="630" y="280" width="185" height="80" rx="8" fill="#ffffff" opacity="0.05"/>
+  <rect x="630" y="280" width="185" height="80" rx="8" fill="none" stroke="#4488cc" stroke-width="0.8"/>
+  <rect x="630" y="280" width="185" height="4" rx="8" fill="url(#s3gold)"/>
+  <text x="722" y="318" font-family="'Georgia', serif" font-size="14" font-weight="700" fill="#ffe066" text-anchor="middle">GOVT ORDERS</text>
+  <text x="722" y="338" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">Letters &amp; Circulars</text>
+  <text x="722" y="355" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">PDF Downloads</text>
+
+  <!-- Block 2 -->
+  <rect x="830" y="280" width="185" height="80" rx="8" fill="#ffffff" opacity="0.05"/>
+  <rect x="830" y="280" width="185" height="80" rx="8" fill="none" stroke="#4488cc" stroke-width="0.8"/>
+  <rect x="830" y="280" width="185" height="4" rx="8" fill="#00ccaa"/>
+  <text x="922" y="318" font-family="'Georgia', serif" font-size="14" font-weight="700" fill="#44ddbb" text-anchor="middle">TOOLS</text>
+  <text x="922" y="338" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">Age Calculator</text>
+  <text x="922" y="355" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">Unit Converters</text>
+
+  <!-- Block 3 -->
+  <rect x="1030" y="280" width="185" height="80" rx="8" fill="#ffffff" opacity="0.05"/>
+  <rect x="1030" y="280" width="185" height="80" rx="8" fill="none" stroke="#4488cc" stroke-width="0.8"/>
+  <rect x="1030" y="280" width="185" height="4" rx="8" fill="#6688ff"/>
+  <text x="1122" y="318" font-family="'Georgia', serif" font-size="14" font-weight="700" fill="#aabbff" text-anchor="middle">WEB LINKS</text>
+  <text x="1122" y="338" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">Curated Portals</text>
+  <text x="1122" y="355" font-family="'Trebuchet MS', sans-serif" font-size="12" fill="#99bbcc" text-anchor="middle">Useful Resources</text>
+
+  <!-- URL button -->
+  <rect x="630" y="383" width="300" height="46" rx="23" fill="url(#s3btngrad)"/>
+  <rect x="630" y="383" width="300" height="46" rx="23" fill="none" stroke="#5599ee" stroke-width="1.5"/>
+  <text x="780" y="412" font-family="'Georgia', serif" font-size="17" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1.5">WWW.SARATOFFICE.IN</text>
+
+  <!-- Stars/sparkle overlays -->
+  <g fill="#ffffff">
+    <polygon points="640,240 642,247 649,247 643,251 645,258 640,254 635,258 637,251 631,247 638,247" opacity="0.15" transform="scale(0.5) translate(800,300)"/>
+  </g>
+
+  <!-- Bottom left: subtle label -->
+  <text x="80" y="488" font-family="'Trebuchet MS', sans-serif" font-size="11" fill="#334466" letter-spacing="2">SARATOFFICE.IN • KNOWLEDGE FOR ALL</text>
+</svg>
